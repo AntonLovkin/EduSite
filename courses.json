@@ -1,0 +1,58 @@
+[
+    {
+        "id": 0,
+        "title": "History",
+        "difficulty": "easy",
+        "img": "./images/history-min.jpg",
+        "description": "This history course takes you on a captivating journey through time, exploring the significant events and ideas that have shaped our world. Through engaging lectures and immersive activities, you'll develop a nuanced understanding of the past and its impact on the present."
+    },
+    {
+        "id": 1,
+        "title": "Science",
+        "difficulty": "easy",
+        "img": "./images/science-min.jpg",
+        "description": "This science course is an exciting journey into the natural world, where you'll learn about the fundamental principles that govern our universe. Through engaging lectures and hands-on experiments, you'll deepen your understanding of scientific concepts and their applications."
+    },
+    {
+        "id": 2,
+        "title": "Biology",
+        "difficulty": "hard",
+        "img": "./images/biology-min.jpg",
+        "description": "This biology course offers a comprehensive exploration of the biological world, from cells to ecosystems. Through interactive lectures and hands-on experiments, you'll gain a deeper understanding of the living world and its intricate processes."
+    },
+    {
+        "id": 3,
+        "title": "Geography",
+        "difficulty": "easy",
+        "img": "./images/geografy-min.jpg",
+        "description": "This geography course explores the fascinating interplay between humans and their physical and cultural environments. Through interactive lectures and real-world case studies, you'll gain a deeper understanding of the world around you and its complex dynamics."
+    },
+        {
+        "id": 4,
+        "title": "Mathematics",
+        "difficulty": "easy",
+        "img": "./images/math-min.jpg",
+        "description": "This math course is designed to help you develop a solid foundation in mathematical concepts and problem-solving techniques. Through interactive lectures and practice exercises, you'll enhance your analytical skills and gain a deeper understanding of mathematical principles."
+    },
+    {
+        "id": 5,
+        "title": "Science",
+        "difficulty": "medium",
+        "img": "./images/science-min.jpg",
+        "description": "This science course is an exciting journey into the natural world, where you'll learn about the fundamental principles that govern our universe. Through engaging lectures and hands-on experiments, you'll deepen your understanding of scientific concepts and their applications."
+    },
+    {
+        "id": 6,
+        "title": "Mathematics",
+        "difficulty": "hard",
+        "img": "./images/math-min.jpg",
+        "description": "This math course is designed to help you develop a solid foundation in mathematical concepts and problem-solving techniques. Through interactive lectures and practice exercises, you'll enhance your analytical skills and gain a deeper understanding of mathematical principles."
+    },
+    {
+        "id": 7,
+        "title": "Geography",
+        "difficulty": "easy",
+        "img": "./images/geografy-min.jpg",
+        "description": "This geography course explores the fascinating interplay between humans and their physical and cultural environments. Through interactive lectures and real-world case studies, you'll gain a deeper understanding of the world around you and its complex dynamics."
+    }
+]

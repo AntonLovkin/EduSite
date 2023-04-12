@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script defer type="module" src="index.js"></script>
+    <title>EduSite</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="/index.html">Home</a>
+            <a class="active" href="/courses.html">Courses</a>
+            <a href="#about">About Us</a>
+            <a href="#contacts">Contact Us</a>
+        </nav>
+            <section class="courses__container">
+                <article>
+                    <h3 class="courses__title">Popular Courses</h3>
+                    <ul class="buttons__list">
+                        <li><button class="buttons__item" id="#science">Science</button></li>
+                        <li><button class="buttons__item" id="#mathematics">Mathematics</button></li>
+                        <li><button class="buttons__item" id="#history">History</button></li>
+                        <li><button class="buttons__item" id="#geography">Geography</button></li>
+                        <li><button class="buttons__item" id="#biology">Biology</button></li>
+                    </ul>
+                    <h3 class="courses__title">Choose Courses by Difficulty</h3>
+                    <ul class="buttons__list difficulty__list">
+                        <li><button class="buttons__item" id="#easy">Easy</button></li>
+                        <li><button class="buttons__item" id="#medium">Medium</button></li>
+                        <li><button class="buttons__item" id="#hard">Hard</button></li>
+                        <li><button class="buttons__item" id="#all">All courses</button></li>
+                    </ul>
+                    <h3 class="courses__title">Find Course by Name</h3>
+                    <form class="form js-form" id="search-form">
+                        <input type="text" name="query" autocomplete="off" placeholder="Find your course..." />
+                    </form>
+                </article>
+            
+            <ul class="collection__list">
+                <!-- <li class="collection__item" id="science">
+                    <div class="overlay">
+                        <p>This content is hidden through transformation and only appears when hovering over</p>
+                    </div>
+                    <img class="img" src="./images/element5-digital-OyCl7Y4y0Bk-unsplash.jpg" alt="">
+                    <h3 class="title">Science</h3>
+                    <span class="difficulty">difficulty: easy</span>
+                </li>
+                <li class="collection__item" id="">
+                    <img class="img" src="./images/element5-digital-OyCl7Y4y0Bk-unsplash.jpg" alt="">
+                    <h3 class="title">History</h3>
+                    <span class="difficulty">difficulty: easy</span>
+                </li> -->
+            </ul>
+            </section>
+        <footer class="footer">
+            <div class="socials" id="contacts">
+                <a class="link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="link__img" src="./images/facebook.svg" alt="facebook" target="_blank" rel="noopener noreferrer">
+                </a>
+                <a class="link" href="https://web.telegram.org/z/">
+                    <img class="link__img" src="./images/telegram.svg" alt="telegram" target="_blank" rel="noopener noreferrer">
+                </a>
+                <a class="link" href="https://www.instagram.com/">
+                    <img class="link__img" src="./images/instagram.svg" alt="instagram" target="_blank" rel="noopener noreferrer">
+                </a>
+            </div>
+            <p>© 2023 by Anton Lovkin</p>
+        </footer>
+    </div>
+</body>
+</html>
