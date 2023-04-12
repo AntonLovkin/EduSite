@@ -1,3 +1,16 @@
+function template(course) {
+    return `<li class="collection__item" id=${course.id}>
+                        <div class="box">
+                            <div class="overlay">
+                                <p>${course.description}</p>
+                            </div>
+                            <img class="img" src=${course.img} alt=${course.title}>
+                        </div>
+                        <a href="#">
+                            <h3 class="title">${course.title}</h3>
+                            <span class="difficulty">difficulty - ${course.difficulty}</span>
+                        </a>
+                </li>`};
 
 async function fetchCourses() {
     const response = await fetch("./courses.json");
@@ -18,19 +31,10 @@ const collectionList = document.querySelector('.collection__list');
     
 function renderAllCoursesList(courses) {
   const markup = courses
-      .map((course) => {
-          return    `<li class="collection__item" id=${course.id}>
-                        <div class="overlay">
-                            <p>${course.description}</p>
-                        </div>
-                        <img class="img" src=${course.img} alt=${course.title}>
-                        <h3   h3 class="title">${course.title}</h3>
-                        <span class="difficulty">difficulty - ${course.difficulty}</span>
-                    </li>`
-})
+        .map((course) => template(course))
         .join("");
   collectionList.innerHTML = markup;
-}
+};
 
 //-------render difficulty list courses-----------------
 
@@ -52,26 +56,15 @@ function findCoursesByDifficulty(e) {
         : fetchCourses()
             .then((courses) => renderDifficultyCoursesList(courses, difficulty))
             .catch((error) => console.log(error));
-}
+};
 
 function renderDifficultyCoursesList(courses, difficulty) {
-    console.log(courses)
   const markup = courses
-      .map((course) => {
+        .map((course) => {
           if (course.difficulty === difficulty) {
-              console.log(true)
-          return    `<li class="collection__item" id=${course.id}>
-                        <div class="overlay">
-                            <p>${course.description}</p>
-                        </div>
-                        <img class="img" src=${course.img} alt=${course.title}>
-                        <h3   h3 class="title">${course.title}</h3>
-                        <span class="difficulty">difficulty - ${course.difficulty}</span>
-                    </li>`
-          }
-})
+              return template(course);
+          }})
         .join("");
-    console.log(markup)
   collectionList.innerHTML = markup;
 }
 
@@ -95,19 +88,10 @@ function findPopularCourses(e) {
 
 function renderPopularCoursesList(courses, popularCourse) {
   const markup = courses
-      .map((course) => {
+        .map((course) => {
           if (course.title.toLowerCase() === popularCourse) {
-              console.log(true)
-          return    `<li class="collection__item" id=${course.id}>
-                        <div class="overlay">
-                            <p>${course.description}</p>
-                        </div>
-                        <img class="img" src=${course.img} alt=${course.title}>
-                        <h3   h3 class="title">${course.title}</h3>
-                        <span class="difficulty">difficulty - ${course.difficulty}</span>
-                    </li>`
-          }
-})
+              return template(course);
+          }})
         .join("");
   collectionList.innerHTML = markup;
 }
@@ -129,23 +113,12 @@ function searchCourses(e) {
         .catch((error) => console.log(error));
 };
 
-function renderSearchedCoursesList(courses, query) {
-        
-        const markup = courses
-            .map((course) => {
-                if (course.title.toLowerCase().includes(query)) {
-                    console.log(true)
-          return    `<li class="collection__item" id=${course.id}>
-                        <div class="overlay">
-                            <p>${course.description}</p>
-                        </div>
-                        <img class="img" src=${course.img} alt=${course.title}>
-                        <h3   h3 class="title">${course.title}</h3>
-                        <span class="difficulty">difficulty - ${course.difficulty}</span>
-                    </li>`
-                }
-            })
+function renderSearchedCoursesList(courses, query) {    
+    const markup = courses
+        .map((course) => {
+            if (course.title.toLowerCase().includes(query)) {
+                return template(course);
+            }})
         .join("");
-        console.log(markup);
-        collectionList.innerHTML = markup;
+    collectionList.innerHTML = markup;
 };
