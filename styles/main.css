@@ -31,7 +31,7 @@ li {
 :root {
   --background-color: rgb(223 235 186);
   --active-color: teal;
-  --text-color-title: bisque;
+  --main-color: bisque;
   --text-color: white;
 }
 
@@ -55,8 +55,10 @@ body {
     max-width: 1180px;
     width: 100%;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     /*  */
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
 }
 
 .nav{
@@ -92,7 +94,7 @@ body {
 
 .nav a:hover,
 .nav a:focus{
-    color: var(--text-color);
+    /* color: var(--text-color); */
     border-color: var(--text-color);
     background-color: rgb(0 0 0 / 10%);
     border-radius: 8px;
@@ -100,10 +102,11 @@ body {
 
 .active {
     color: var(--active-color);
-    border-bottom: 2px solid var(--active-color);
+    border-bottom: 3px solid var(--active-color);
 }
 
 .hero{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -122,7 +125,7 @@ body {
     text-align: center;
 
     font-size: 2rem;
-    color:var(--text-color-title);
+    color:var(--main-color);
 }
 
 @media (min-width: 485px) {
@@ -177,7 +180,7 @@ body {
 .hero__button:hover,
 .hero__button:focus{
     color: black;
-    background-color: var(--background-color);
+    background-color: var(--main-color);
 }
 
 .footer{
@@ -198,27 +201,29 @@ body {
     gap: 20px;
 }
 
-.socials a {
+/* .socials a {
     padding: 5px;
     transition: all ease-in-out .4s;
-}
+} */
 
-.socials a:hover,
+/* .socials a:hover,
 .socials a:focus{
     color: var(--text-color);
-}
+} */
 
 .link{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 
-    padding: 5px;
+    padding: 10px;
     border-color: aquamarine;
     transition: all ease .4s;
 }
 
 .link:hover {
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+    background-color:  var(--main-color);
+    border-radius: 50%;
 }
 
 .link__img{
@@ -228,10 +233,10 @@ body {
  /* --------courses page------------ */
 
  .courses__container {
-    --d-width: 1180px;
-    max-width: var(--d-width);
+    /* --d-width: 1180px; */
+    /* max-width: var(--d-width); */
     min-height: 80vh;
-    width: 100%;
+    width: 100vw;
 
     padding: 30px;
 
@@ -294,7 +299,7 @@ body {
 
 .buttons__item:hover,
 .buttons__item:focus         {
-    background-color: var(--background-color);
+    background-color: var(--main-color);
     /* color: antiquewhite; */
     transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s;
 }
@@ -323,8 +328,8 @@ body {
 
 .box {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   background-color: #bdbdbd;
   overflow: hidden;
@@ -336,10 +341,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--text-color-title);
+  background-color: var(--main-color);
 
   padding: 20px;
   font-size: 20px;
+  line-height: 24px;
   color: #fff;
 
   transform: translatey(100%);
