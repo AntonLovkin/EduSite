@@ -1,4 +1,5 @@
 # EduSite
+https://edu-site-by-anton-lovkin.netlify.app/
 Design  2 simple responsive landing pages for the educational site
 
 Task1:
